@@ -40,7 +40,6 @@ export default function Sight() {
   });
 
   const lastPage = sightAll.data ? Math.ceil(sightAll.data.length / limit) : 1;
-  console.log(lastPage);
   
   return (
     <>
