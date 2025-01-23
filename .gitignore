@@ -4,7 +4,6 @@
 /node_modules
 /.husky
 /.prettierrc.json
-/eslint.config.mjs
 /package-lock.json
 /.pnp
 .pnp.js
