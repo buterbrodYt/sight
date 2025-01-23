@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sight/static/css/main.11938b7a.css",
-    "main.js": "/sight/static/js/main.e45e33ce.js",
+    "main.css": "/sight/static/css/main.caa8109b.css",
+    "main.js": "/sight/static/js/main.8f6edd08.js",
     "static/media/slider2.png": "/sight/static/media/slider2.88b6a15bd63f67a58cb8.png",
     "static/media/slider3.png": "/sight/static/media/slider3.b9f55b0696fa4a68106c.png",
     "static/media/slider4.png": "/sight/static/media/slider4.d36d4b0d7f7f74011514.png",
@@ -20,16 +20,16 @@
     "static/media/logo_wh.svg": "/sight/static/media/logo_wh.33b2b28e73419f525f2c5fa85cedb61c.svg",
     "static/media/can.svg": "/sight/static/media/can.b15e262166de749c364f013319a40b52.svg",
     "index.html": "/sight/index.html",
-    "static/media/filter_icon.svg": "/sight/static/media/filter_icon.7f0a4fbf6e78314d5458.svg",
-    "static/media/Chevrons_double_left.svg": "/sight/static/media/Chevrons_double_left.157ecdb2aaef39eee6b952a40e3e581c.svg",
-    "static/media/Chevrons_double_right.svg": "/sight/static/media/Chevrons_double_right.dc4f1b07751e762d02c5e73865b8db38.svg",
+    "static/media/filter_icon.svg": "/sight/static/media/filter_icon.2aecf666da0a39c1bdbc.svg",
+    "static/media/Chevrons_double_left.svg": "/sight/static/media/Chevrons_double_left.f0e58f5406327d1e47ab24fe0bb8fe45.svg",
+    "static/media/Chevrons_double_right.svg": "/sight/static/media/Chevrons_double_right.b7b7b267008416d6b17a0b487137ef39.svg",
     "static/media/arrow-right.svg": "/sight/static/media/arrow-right.5014c20fbd92499b3c2bf4d41d564f9b.svg",
     "static/media/arrow-left.svg": "/sight/static/media/arrow-left.25af9ebdf2584b179ede9dd0cc8e5a5e.svg",
-    "main.11938b7a.css.map": "/sight/static/css/main.11938b7a.css.map",
-    "main.e45e33ce.js.map": "/sight/static/js/main.e45e33ce.js.map"
+    "main.caa8109b.css.map": "/sight/static/css/main.caa8109b.css.map",
+    "main.8f6edd08.js.map": "/sight/static/js/main.8f6edd08.js.map"
   },
   "entrypoints": [
-    "static/css/main.11938b7a.css",
-    "static/js/main.e45e33ce.js"
+    "static/css/main.caa8109b.css",
+    "static/js/main.8f6edd08.js"
   ]
 }
