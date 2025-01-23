@@ -17,7 +17,8 @@ export default function Map({ map, handleToggleMap }) {
     window.addEventListener('mousedown', hideMap);
     window.addEventListener('keydown', hideMap);
     return () => (
-      window.removeEventListener('mousedown', hideMap),
+      // eslint-disable-next-line
+      window.removeEventListener('mousedown', hideMap),// eslint-disable-next-line
       window.removeEventListener('keydown', hideMap)
     );
   }, [handleToggleMap]);
