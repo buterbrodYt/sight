@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
 
 import { Main, Sight, SightCard, Contact } from "./pages";
 import { Header, Footer } from "./components";
@@ -10,7 +10,7 @@ export const queryClient = new QueryClient();
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <HashRouter>
+      <BrowserRouter basename="/sight/">
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
@@ -19,7 +19,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </QueryClientProvider>
   );
 }
