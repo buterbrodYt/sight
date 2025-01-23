@@ -3,11 +3,11 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Укажите ветку, которую вы используете (main или master)
+      - main
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout code
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Укажите версию Node.js, которую используете
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
@@ -28,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Папка, куда собирается React-проект
+          publish_dir: ./build
