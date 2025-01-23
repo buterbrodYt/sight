@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sight.git/static/css/main.bee1c1b8.css",
+    "main.css": "/sight.git/static/css/main.e70dd36f.css",
     "main.js": "/sight.git/static/js/main.1014cc98.js",
     "static/media/slider2.png": "/sight.git/static/media/slider2.88b6a15bd63f67a58cb8.png",
     "static/media/slider3.png": "/sight.git/static/media/slider3.b9f55b0696fa4a68106c.png",
@@ -20,17 +20,16 @@
     "static/media/logo_wh.svg": "/sight.git/static/media/logo_wh.33b2b28e73419f525f2c5fa85cedb61c.svg",
     "static/media/can.svg": "/sight.git/static/media/can.b15e262166de749c364f013319a40b52.svg",
     "index.html": "/sight.git/index.html",
-    "static/media/search_icon.svg": "/sight.git/static/media/search_icon.f5b868c448ac416055ec.svg",
     "static/media/filter_icon.svg": "/sight.git/static/media/filter_icon.2aecf666da0a39c1bdbc.svg",
     "static/media/Chevrons_double_left.svg": "/sight.git/static/media/Chevrons_double_left.f0e58f5406327d1e47ab24fe0bb8fe45.svg",
     "static/media/Chevrons_double_right.svg": "/sight.git/static/media/Chevrons_double_right.b7b7b267008416d6b17a0b487137ef39.svg",
     "static/media/arrow-right.svg": "/sight.git/static/media/arrow-right.5014c20fbd92499b3c2bf4d41d564f9b.svg",
     "static/media/arrow-left.svg": "/sight.git/static/media/arrow-left.25af9ebdf2584b179ede9dd0cc8e5a5e.svg",
-    "main.bee1c1b8.css.map": "/sight.git/static/css/main.bee1c1b8.css.map",
+    "main.e70dd36f.css.map": "/sight.git/static/css/main.e70dd36f.css.map",
     "main.1014cc98.js.map": "/sight.git/static/js/main.1014cc98.js.map"
   },
   "entrypoints": [
-    "static/css/main.bee1c1b8.css",
+    "static/css/main.e70dd36f.css",
     "static/js/main.1014cc98.js"
   ]
 }
