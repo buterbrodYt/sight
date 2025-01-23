@@ -11,7 +11,7 @@ export const queryClient = new QueryClient();
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename="/sight">
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
