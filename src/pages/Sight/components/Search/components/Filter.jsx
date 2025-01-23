@@ -12,7 +12,7 @@ export default function Filter({ handleOpenFilter }) {
 
   React.useEffect(() => {
     const pressEscape = (e) => {
-      if (e.key == "Escape") {
+      if (e.key === "Escape") {
         handleOpenFilter();
       }
     };

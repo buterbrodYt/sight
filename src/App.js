@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
@@ -10,7 +11,7 @@ export const queryClient = new QueryClient();
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename="/sight/">
+      <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />

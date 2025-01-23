@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 import "./styles.scss";
@@ -8,9 +9,9 @@ export default function Gallery({ images, handleToggleGallary }) {
   const backGallery = React.useRef();
   React.useEffect(() => {
     const closeGallery = (e) => {
-      if (e.key == "Escape") {
+      if (e.key === "Escape") {
         handleToggleGallary();
-      } else if (e.target == backGallery.current) {
+      } else if (e.target === backGallery.current) {
         handleToggleGallary();
       }
     };

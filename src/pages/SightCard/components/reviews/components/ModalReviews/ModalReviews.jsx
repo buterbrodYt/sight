@@ -34,16 +34,17 @@ export default function ModalReviews({ handleCloseReviews }) {
 
   React.useEffect(() => {
     const closeModal = (e) => {
-      if (e.key == 'Escape') {
+      if (e.key === 'Escape') {
         return handleCloseReviews();
       }
-      if (e.target == modalBack.current) {
+      if (e.target === modalBack.current) {
         return handleCloseReviews();
       }
     };
     window.addEventListener('mousedown', closeModal);
     window.addEventListener('keydown', closeModal);
     return () => (
+      // eslint-disable-next-line no-unused-vars
       window.removeEventListener('keydown', closeModal),
       window.removeEventListener('mousedown', closeModal)
     );

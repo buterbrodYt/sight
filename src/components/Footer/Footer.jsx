@@ -1,10 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import FooterLogo from "../../assets/img/logo_wh.svg";
-import TG from "../../assets/img/TG.svg";
-import VK from "../../assets/img/VK.svg";
-import "./styles.scss";
+import FooterLogo from '../../assets/img/logo_wh.svg';
+import TG from '../../assets/img/TG.svg';
+import VK from '../../assets/img/VK.svg';
+import './styles.scss';
 
 export default function Footer() {
   return (
@@ -15,9 +16,7 @@ export default function Footer() {
             <img src={FooterLogo} alt="logo" className="footer__logo-pic" />
             <div className="footer__logo-block">
               <p className="footer__logo-title">Городской Навигатор</p>
-              <p className="footer__logo-subtitle">
-                ©2024 Городской Навигатор
-              </p>
+              <p className="footer__logo-subtitle">©2024 Городской Навигатор</p>
             </div>
           </Link>
         </div>
@@ -27,19 +26,13 @@ export default function Footer() {
           </Link>
           <div className="footer__contact-wrap">
             <div className="footer__contact-block">
-              <a
-                href="https://t.me/butterbrodyt"
-                className="footer__contact-link"
-              >
+              <a href="https://t.me/butterbrodyt" className="footer__contact-link">
                 <img src={TG} alt="telegram" className="footer__contact-pic" />
                 <p className="footer__contact-text">Telegram</p>
               </a>
             </div>
             <div className="footer__contact-block">
-              <a
-                href="https://vk.com/mc_max1939"
-                className="footer__contact-link"
-              >
+              <a href="https://vk.com/mc_max1939" className="footer__contact-link">
                 <img src={VK} alt="Vkontakte" className="footer__contact-pic" />
                 <p className="footer__contact-text">Vkontakte</p>
               </a>

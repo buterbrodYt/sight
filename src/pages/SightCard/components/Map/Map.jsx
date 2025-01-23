@@ -1,24 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "./styles.scss";
+import './styles.scss';
 
 export default function Map({ map, handleToggleMap }) {
   const mapElement = React.useRef();
 
   React.useEffect(() => {
     const hideMap = (e) => {
-      if (e.key == "Escape") {
+      if (e.key === 'Escape') {
         handleToggleMap();
-      } else if (e.target != mapElement.current) {
+      } else if (e.target !== mapElement.current) {
         handleToggleMap();
       }
     };
-    window.addEventListener("mousedown", hideMap);
-    window.addEventListener("keydown", hideMap);
+    window.addEventListener('mousedown', hideMap);
+    window.addEventListener('keydown', hideMap);
     return () => (
-      window.removeEventListener("mousedown", hideMap),
-      window.removeEventListener("keydown", hideMap)
+      window.removeEventListener('mousedown', hideMap),
+      window.removeEventListener('keydown', hideMap)
     );
   }, [handleToggleMap]);
   return (
@@ -26,6 +26,7 @@ export default function Map({ map, handleToggleMap }) {
       <div className="mapCard__yandex">
         <div ref={mapElement} className="mapCard__yandex-wrap">
           <iframe
+            title="123"
             src={map}
             id="map"
             className="mapCard__yandex-iframe"

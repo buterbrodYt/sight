@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sight.git/static/css/main.e70dd36f.css",
-    "main.js": "/sight.git/static/js/main.d3db5c82.js",
+    "main.js": "/sight.git/static/js/main.d870733c.js",
     "static/media/slider2.png": "/sight.git/static/media/slider2.88b6a15bd63f67a58cb8.png",
     "static/media/slider3.png": "/sight.git/static/media/slider3.b9f55b0696fa4a68106c.png",
     "static/media/slider4.png": "/sight.git/static/media/slider4.d36d4b0d7f7f74011514.png",
@@ -26,10 +26,10 @@
     "static/media/arrow-right.svg": "/sight.git/static/media/arrow-right.5014c20fbd92499b3c2bf4d41d564f9b.svg",
     "static/media/arrow-left.svg": "/sight.git/static/media/arrow-left.25af9ebdf2584b179ede9dd0cc8e5a5e.svg",
     "main.e70dd36f.css.map": "/sight.git/static/css/main.e70dd36f.css.map",
-    "main.d3db5c82.js.map": "/sight.git/static/js/main.d3db5c82.js.map"
+    "main.d870733c.js.map": "/sight.git/static/js/main.d870733c.js.map"
   },
   "entrypoints": [
     "static/css/main.e70dd36f.css",
-    "static/js/main.d3db5c82.js"
+    "static/js/main.d870733c.js"
   ]
 }

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 import micro_bg1 from "../../../../assets/img/micro_bg1.png";
