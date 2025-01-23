@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import { Main, Sight, SightCard, Contact } from "./pages";
 import { Header, Footer } from "./components";
