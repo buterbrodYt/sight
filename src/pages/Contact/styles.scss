@@ -1,0 +1,82 @@
+@import "../../assets/scss/variables.scss";
+
+.contact {
+  margin: 0 auto;
+
+  &__wrap {
+    margin: 0 10px;
+    margin-right: 15%;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    @media (max-width: 500px) {
+      margin-right: 10px;
+    }
+  }
+
+  &__btn {
+    width: 520px;
+    height: 110px;
+    border-radius: 30px;
+    border: none;
+    background-color: $bej_color;
+    color: $main_color;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 250px;
+
+    @media (max-width: 540px) {
+      width: 100%;
+    }
+
+    &:active {
+      background-color: $main_color;
+      color: $second_block_color;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__social {
+    padding: 30px;
+    background-color: rgba(211, 224, 237, 0.5);
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+
+    @media (max-width: 540px) {
+      width: 100%;
+      padding: 15px;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &-text {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: space-around;
+      gap: 50px;
+      width: 100%;
+      padding: 0 40px;
+
+      @media (max-width: 520px) {
+        padding: 0 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../../../assets/scss/variables.scss";
+
+.gallery {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+
+  &__view {
+    width: 100vw;
+    height: 80%;
+    overflow: hidden;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+  }
+
+  &__slide {
+    position: relative;
+    min-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__nav {
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    height: 40px;
+    width: 100%;
+
+    button {
+      float: left;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      background-color: transparent;
+
+      &.gallery__nav-next {
+        float: right;
+        width: 40px;
+        padding: 0;
+        margin-right: 100px;
+
+        @media (max-width: 700px) {
+          margin-right: 10px;
+        }
+      }
+
+      &.gallery__nav-back {
+        margin-left: 100px;
+        width: 40px;
+        padding: 0;
+        border-radius: 50%;
+
+        @media (max-width: 700px) {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

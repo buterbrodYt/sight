@@ -1,0 +1,48 @@
+@import "../../../../../assets/scss/variables.scss";
+
+.search {
+  &__filter {
+    &-opt {
+      color: $main_text_color;
+      background-color: $background_color;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    justify-content: space-between;
+    z-index: 2;
+    margin-top: 176px;
+    width: 30%;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: $block_color;
+    border: #fff 3px solid;
+
+    @media (max-width: 768px) {
+      width: 80%;
+      justify-content: center;
+      gap: 5px;
+      padding: 40px 20px;
+      margin-top: 152px;
+    }
+
+    select {
+      border: none;
+
+      @media (max-width: 768px) {
+        width: 50%;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.open {
+  display: flex;
+}

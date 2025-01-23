@@ -1,0 +1,35 @@
+@import "../../../../assets/scss/variables.scss";
+
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+
+  & button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  & button:disabled {
+    cursor: not-allowed;
+  }
+
+  &__text {
+    font-size: 24px;
+    color: $main_color;
+
+    &.disable {
+      display: none;
+    }
+
+    &-main {
+      font-size: 28px;
+      vertical-align: top;
+      opacity: 1;
+    }
+  }
+}

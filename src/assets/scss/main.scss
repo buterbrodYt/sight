@@ -1,0 +1,24 @@
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+body {
+  background-color: #131313;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

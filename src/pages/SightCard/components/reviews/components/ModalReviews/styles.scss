@@ -1,0 +1,99 @@
+@import "../../../../../../assets/scss/variables.scss";
+
+.sight__reviews-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  gap: 50px;
+  width: 40%;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #ddd;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  &-back {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+
+    &.flex {
+      display: flex;
+    }
+  }
+
+  &-input {
+    width: 80%;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-textarea {
+    max-width: 100%;
+    width: 80%;
+    max-height: 300px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-sumbit {
+    background-color: $main_color;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: $background_color;
+    align-self: flex-end;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    border: none;
+    border-radius: 50%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.close {
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,104 @@
+@import "../../../assets/scss/variables.scss";
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  opacity: 1;
+  background-color: rgba(42, 46, 49, 0.5);
+
+  &__wrap {
+    background: url(../../../assets/img/social.png) no-repeat center
+      center/cover;
+    border: 10px solid $second_block_color;
+    border-radius: 30px;
+    width: 50%;
+    position: absolute;
+    top: 100px;
+    left: 25%;
+
+    @media (max-width: 1400px) {
+      left: 0;
+      top: 75px;
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+
+  &__content {
+    background-color: $second_text_color;
+    color: $main_color;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+
+    @media (max-width: 1400px) {
+      margin: 15% auto;
+      width: 90%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-top: 10px;
+    }
+
+    input,
+    textarea {
+      display: flex;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+      max-width: 100%;
+      max-height: 285px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+    }
+
+    button[type="submit"] {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: $main_color;
+      border-radius: 15px;
+      color: $second_text_color;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $second_block_color;
+      }
+    }
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.open {
+  display: block;
+}

@@ -1,0 +1,92 @@
+{
+  "name": "sight",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://buterbrodyt.github.io/sight/",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "@tanstack/react-query": "^5.64.1",
+    "axios": "^1.7.9",
+    "classnames": "^2.5.1",
+    "cra-template": "1.2.0",
+    "eslint-plugin-jsdoc": "^50.6.1",
+    "gh-pages": "^6.3.0",
+    "lint-staged": "^15.3.0",
+    "react": "^19.0.0",
+    "react-content-loader": "^7.0.2",
+    "react-dom": "^19.0.0",
+    "react-loading-skeleton": "^3.5.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "5.0.1",
+    "redux": "^5.0.1",
+    "sass": "^1.83.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && cp build/index.html build/404.html",
+    "test": "jest",
+    "format": "prettier --write .",
+    "eject": "react-scripts eject",
+    "lint": "prettier --check .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:react/jsx-runtime",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {}
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@tanstack/eslint-plugin-query": "^5.62.16",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0",
+    "jest": "^27.5.1",
+    "prettier": "^3.4.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write \"**/src/*.js\"",
+      "prettier --write \"**/src/*.jsx\"",
+      "npm test",
+      "eslint --fix"
+    ],
+    "*.{html,css,less,ejs,json}": [
+      "prettier --write"
+    ]
+  }
+}

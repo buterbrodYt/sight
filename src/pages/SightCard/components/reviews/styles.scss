@@ -1,0 +1,19 @@
+@import "../../../../assets/scss/variables.scss";
+
+.sight__reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+
+  &-data {
+    width: 100%;
+  }
+
+  &-title {
+    font-size: 32px;
+    color: $main_text_color;
+  }
+}

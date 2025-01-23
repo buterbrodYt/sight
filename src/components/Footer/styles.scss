@@ -1,0 +1,146 @@
+@import "../../assets/scss/variables.scss";
+
+.footer {
+  background-color: $block_color;
+
+  &__wrap {
+    margin: 0 75px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 30px;
+    }
+
+    &-pic {
+      width: 60px;
+      height: 60px;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      @media (max-width: 900px) {
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+
+    &-title {
+      color: $second_text_color;
+      width: 100%;
+      font-size: 24px;
+      font-weight: 500;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    &-subtitle {
+      width: 100%;
+      color: $second_text_color;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 10px;
+
+      @media (max-width: 900px) {
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 360px) {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+
+    &-title {
+      color: $second_text_color;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &-link {
+      color: $second_text_color;
+      font-size: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-text {
+      display: flex;
+      font-size: 16px;
+      align-items: center;
+    }
+
+    &-block {
+      display: flex;
+      gap: 5px;
+      color: $second_text_color;
+    }
+  }
+
+  &__politics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 30px;
+    }
+
+    &-link {
+      color: $second_text_color;
+    }
+
+    &-text {
+      font-size: 20px;
+
+      @media (max-width: 900px) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: $block_color;
+    height: 20px;
+
+    &-text {
+      margin-right: 75px;
+      float: right;
+      color: $second_block_color;
+      background-color: transparent;
+    }
+  }
+}

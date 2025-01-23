@@ -1,0 +1,70 @@
+@import "../../../../../../assets/scss/variables.scss";
+
+.sight__reviews-review {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 200px;
+  background-color: $bej_color;
+  border-radius: 92px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 50px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  &-block {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 25px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 50px;
+    }
+  }
+
+  &-can {
+    position: absolute;
+    right: 10%;
+    border-radius: 15px;
+
+    &:hover {
+      transition: 0.5s;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &-name {
+    font-size: 32px;
+    font-weight: 700;
+    word-break: break-all;
+  }
+
+  &-rating {
+    display: flex;
+    height: 50px;
+    color: gold;
+    margin-top: -50px;
+    font-size: 60px;
+    font-weight: 700;
+    word-break: break-all;
+
+    @media (max-width: 768px) {
+      margin-bottom: 25px;
+      font-size: 50px;
+    }
+  }
+
+  &-description {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    word-break: break-all;
+  }
+}
